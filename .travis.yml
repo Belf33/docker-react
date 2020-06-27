@@ -8,4 +8,4 @@ before_install:
     - docker build -t belf33/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run -e CI=true belf33/docker-react npm run test
+    - docker run -e CI=true belf33/docker-react npm run test -- --coverage
